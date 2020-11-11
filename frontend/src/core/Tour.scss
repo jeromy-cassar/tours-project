@@ -1,0 +1,71 @@
+.tour-row{
+cursor: pointer;
+    &:hover{
+        background-color: rgb(224, 209, 209);
+    }
+    div{
+        margin:1vw;
+    }
+}
+
+#root .location-list{
+    display:none;
+    margin-left:5vw;
+}
+
+#root .tour-row .location-list-active{
+    display:block;
+  
+}
+
+#root .plus-minus{
+    position:relative;
+    font-size:1.2rem;
+    font-weight: 400;
+    color: grey;
+
+    .plus{
+        margin:0;
+        padding:0;
+        // width:1px;
+        transition:0.3s ease-in-out;
+    }
+
+    .minus{
+        margin:0;
+        padding:0;
+        top:0;
+        left:0;
+        position: absolute;
+        transform: rotate(90deg) translate(0%, -4%);
+        transition:0.3s ease-in-out;
+
+    }
+}
+
+// 1
+#root .plus-minus-active{
+    .plus{
+        transform: rotate(270deg);
+    }
+
+    .minus{
+        transform: rotate(270deg);
+    }
+}
+
+.tours-label{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.07), 0 6px 5px 0 rgba(0, 0, 0, 0.07);
+    background: linear-gradient(to right, rgb(89, 117, 22), rgb(160, 211, 119)) ;
+    position: relative;
+    top:0.7rem;
+    left:-0.8rem;
+    background-color: rgb(129, 129, 21);
+    color:white;
+    font-weight: 600;
+    padding:1rem;
+    width:8%;
+}
+
+// for createTour
+
